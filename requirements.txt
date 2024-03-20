@@ -8,3 +8,8 @@ seaborn==0.13.2
 shap==0.45.0
 streamlit==1.32.2
 xgboost==2.0.3
+uvicorn
+gunicorn
+requests==2.31.0
+fastapi==0.110
+pydantic==2.6.3

@@ -144,9 +144,8 @@ if button:
         "recycling": str(recycling),
         "cooking_with": str(cooking_with)
     }
-    print(data)
 
-    response = requests.post("http://localhost:8000/predict", json=data)
+    response = requests.post("http://20.235.218.72/predict", json=data)
     pred = response.json()["Predicted Monthly Emission"]
 
     st.markdown(f"<h5 style='text-align: center; color: #34343c;'>Predicted Monthly Emission: {pred} kgCO2e</h5>", unsafe_allow_html=True)
